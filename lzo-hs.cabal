@@ -1,0 +1,100 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           lzo-hs
+version:        0.1.0
+synopsis:       LZO (lzo2) bundled for Haskell
+license:        MIT
+license-file:   LICENSE
+build-type:     Simple
+
+library
+  exposed-modules:
+      Codec.Compression.Lzo.Block
+      Tmp
+  other-modules:
+      Paths_lzo_hs
+  hs-source-dirs:
+      src
+  ghc-options: -O2
+  cc-options: -O3
+  include-dirs:
+      cbits/include
+      cbits/src/include
+  c-sources:
+      cbits/src/lzo1.c
+      cbits/src/lzo1_99.c
+      cbits/src/lzo1a.c
+      cbits/src/lzo1a_99.c
+      cbits/src/lzo1b_1.c
+      cbits/src/lzo1b_2.c
+      cbits/src/lzo1b_3.c
+      cbits/src/lzo1b_4.c
+      cbits/src/lzo1b_5.c
+      cbits/src/lzo1b_6.c
+      cbits/src/lzo1b_7.c
+      cbits/src/lzo1b_8.c
+      cbits/src/lzo1b_9.c
+      cbits/src/lzo1b_99.c
+      cbits/src/lzo1b_9x.c
+      cbits/src/lzo1b_cc.c
+      cbits/src/lzo1b_d1.c
+      cbits/src/lzo1b_d2.c
+      cbits/src/lzo1b_rr.c
+      cbits/src/lzo1b_xx.c
+      cbits/src/lzo1c_1.c
+      cbits/src/lzo1c_2.c
+      cbits/src/lzo1c_3.c
+      cbits/src/lzo1c_4.c
+      cbits/src/lzo1c_5.c
+      cbits/src/lzo1c_6.c
+      cbits/src/lzo1c_7.c
+      cbits/src/lzo1c_8.c
+      cbits/src/lzo1c_9.c
+      cbits/src/lzo1c_99.c
+      cbits/src/lzo1c_9x.c
+      cbits/src/lzo1c_cc.c
+      cbits/src/lzo1c_d1.c
+      cbits/src/lzo1c_d2.c
+      cbits/src/lzo1c_rr.c
+      cbits/src/lzo1c_xx.c
+      cbits/src/lzo1f_1.c
+      cbits/src/lzo1f_9x.c
+      cbits/src/lzo1f_d1.c
+      cbits/src/lzo1f_d2.c
+      cbits/src/lzo1x_1.c
+      cbits/src/lzo1x_1k.c
+      cbits/src/lzo1x_1l.c
+      cbits/src/lzo1x_1o.c
+      cbits/src/lzo1x_9x.c
+      cbits/src/lzo1x_d1.c
+      cbits/src/lzo1x_d2.c
+      cbits/src/lzo1x_d3.c
+      cbits/src/lzo1x_o.c
+      cbits/src/lzo1y_1.c
+      cbits/src/lzo1y_9x.c
+      cbits/src/lzo1y_d1.c
+      cbits/src/lzo1y_d2.c
+      cbits/src/lzo1y_d3.c
+      cbits/src/lzo1y_o.c
+      cbits/src/lzo1z_9x.c
+      cbits/src/lzo1z_d1.c
+      cbits/src/lzo1z_d2.c
+      cbits/src/lzo1z_d3.c
+      cbits/src/lzo2a_9x.c
+      cbits/src/lzo2a_d1.c
+      cbits/src/lzo2a_d2.c
+      cbits/src/lzo_crc.c
+      cbits/src/lzo_init.c
+      cbits/src/lzo_ptr.c
+      cbits/src/lzo_str.c
+      cbits/src/lzo_util.c
+  build-tools:
+      hsc2hs
+  build-depends:
+      base
+    , bytestring
+  default-language: Haskell2010

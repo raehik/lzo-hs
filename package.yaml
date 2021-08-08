@@ -1,0 +1,23 @@
+name: lzo-hs
+version: 0.1.0
+synopsis: LZO (lzo2) bundled for Haskell
+
+dependencies:
+- base
+- bytestring
+  #        digest -any,
+  #      binary >=0.8.3.0
+
+library:
+  source-dirs: src
+  build-tools:
+  - hsc2hs
+  include-dirs:
+  - cbits/include
+  - cbits/src/include
+  c-sources:
+  - cbits/src/*
+  ghc-options:
+  - -O2
+  cc-options:
+  - -O3
